@@ -1,0 +1,11 @@
+floppybirdv0:
+  env_id: "FlappyBird-v0"
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay: 0.995
+  replay_buffer_size: 100000
+  minibatch_size: 64
+  network_sync_freq: 500 #intervals at which we will sync our target network with our policy network
+  gamma: 0.99
+  alpha: 0.001
+  reward_threshold: 1000
